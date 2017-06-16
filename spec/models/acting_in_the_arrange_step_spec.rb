@@ -95,10 +95,10 @@ RSpec.describe User, type: :model do
     # - Corner #3, Conclusion: We're all familiar with code that's hard to
     # test. But can you feel the pressure here where we literally have a test
     # that makes it hard to write more code?
-    context "when age is non-numeric" do
-      pending "This spec cannot do its necessary Arrange step because the before block has already done the Act step"
-      it "is not valid"
-      it "has error on age"
-    end
+    # context "when age is non-numeric" do
+    #   pending "This spec cannot do its necessary Arrange step because the before block has already done the Act step"
+    #   it "is not valid"
+    #   it "has error on age"
+    # end
   end
 end
