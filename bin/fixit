@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+filename = "./app/models/user.rb"
+lines = IO.readlines(filename).map(&:rstrip)
+lines[2].sub! /^# /, ''
+File.open(filename, 'w') do |file|
+  file.puts lines
+end
